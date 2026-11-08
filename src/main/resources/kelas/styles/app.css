@@ -1,0 +1,58 @@
+.root {
+    -fx-font-family: "SansSerif";
+    -fx-font-size: 14px;
+    -fx-background-color: #f4f7fb;
+}
+.header {
+    -fx-padding: 20 24;
+    -fx-background-color: white;
+    -fx-alignment: center-left;
+}
+.page {
+    -fx-padding: 24;
+}
+.card {
+    -fx-background-color: white;
+    -fx-background-radius: 14;
+    -fx-padding: 24;
+}
+.title {
+    -fx-font-size: 25px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #18334d;
+}
+.subtitle {
+    -fx-font-size: 19px;
+    -fx-font-weight: bold;
+}
+.muted {
+    -fx-text-fill: #64748b;
+    -fx-font-size: 12px;
+}
+.error {
+    -fx-text-fill: #b91c1c;
+}
+.button {
+    -fx-padding: 10 16;
+    -fx-background-radius: 8;
+    -fx-cursor: hand;
+}
+.button-primary {
+    -fx-background-color: #2563eb;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+.button-primary:hover {
+    -fx-background-color: #1d4ed8;
+}
+.text-field, .combo-box {
+    -fx-background-radius: 7;
+    -fx-padding: 9;
+}
+.scroll-pane, .scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+.table-view {
+    -fx-background-color: white;
+    -fx-border-color: #e2e8f0;
+}

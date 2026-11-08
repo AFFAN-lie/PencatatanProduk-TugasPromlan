@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.ImageView?>
+<BorderPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kelas.controller.FormController" stylesheets="@styles/app.css">
+    <top>
+        <HBox spacing="16" styleClass="header">
+            <Label text="Pencatatan Produk Toko" styleClass="title"/>
+            <Button text="Lihat Daftar" onAction="#bukaDaftar"/>
+        </HBox>
+    </top>
+    <center>
+        <ScrollPane fitToWidth="true">
+            <content>
+                <VBox spacing="16" styleClass="page">
+                    <VBox spacing="12" styleClass="card">
+                        <Label text="Tambah produk baru" styleClass="subtitle"/>
+                        <Label text="Nama produk"/>
+                        <TextField fx:id="namaField" promptText="Contoh: Roti Cokelat"/>
+                        <Label text="Kategori produk"/>
+                        <ComboBox fx:id="kategoriBox" maxWidth="Infinity"/>
+                        <Label text="Pilih kategori: Makanan atau Minuman" styleClass="muted" wrapText="true"/>
+                        <Label text="Harga produk (Rp)"/>
+                        <TextField fx:id="hargaField" promptText="Contoh: 15000"/>
+                        <Label text="Lampiran (opsional)"/>
+                        <ImageView fx:id="gambarView" fitWidth="280" fitHeight="160" preserveRatio="true"/>
+                        <Button text="Pilih Gambar" onAction="#pilihGambar"/>
+                        <Label text="PNG/JPEG, maksimal 5 MB. File lokal, bukan upload ke server." wrapText="true" styleClass="muted"/>
+                        <Button text="Simpan dan Lihat Detail" onAction="#simpan" styleClass="button-primary" maxWidth="Infinity"/>
+                        <Label fx:id="pesanLabel" wrapText="true" styleClass="error"/>
+                    </VBox>
+                </VBox>
+            </content>
+        </ScrollPane>
+    </center>
+</BorderPane>
