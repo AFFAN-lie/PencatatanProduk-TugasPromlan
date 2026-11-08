@@ -24,6 +24,9 @@
 3. Buka terminal di direktori proyek dan jalankan perintah berikut:
    ```bash
    mvn clean javafx:run
+   ```
 
 ## Tampilan UI
-![Tampilan Aplikasi Pencatatan Produk](assets/Screenshot 1.png)(assets/Screenshot 2.png)(assets/Screenshot 3.png)
+![Tampilan Aplikasi Pencatatan Produk](assets/Screenshot3.png)
+![Tampilan Aplikasi Pencatatan Produk](assets/Screenshot2.png)
+![Tampilan Aplikasi Pencatatan Produk](assets/Screenshot1.png)
